@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Images missing alternative text — allbirds.com</title>
+<link rel="stylesheet" href="cro_system.css">
+</head>
+<body class="">
+<header>
+  <a class="logo-area" href="index.html" style="text-decoration:none">
+    <div class="logo-dot">A</div>
+    <div>
+      <div class="logo-text">allbirds.com</div>
+      <div class="logo-sub">CRO Recommendations — August 2026</div>
+    </div>
+  </a>
+  <nav class="nav"><a href="index.html">Overview</a><a href="roadmap.html">Roadmap</a><a href="appendix.html">All findings</a><a href="methodology.html">Method</a></nav>
+</header>
+
+<div class="wrap">
+  <div class="finding-head">
+    <div class="badge-row">
+      <span class="rank-chip rank-medium">10</span>
+      <span class="badge badge-medium">Medium</span>
+      <span class="badge badge-effort">SITE-WIDE ACCESSIBILITY</span>
+      <span class="badge badge-verified">Verified by measurement</span>
+    </div>
+    <h1>Images missing alternative text</h1>
+    <p class="thesis">12 of 55 images carry no alt attribute, losing both assistive technology support and the image-search traffic the alt text earns.</p>
+  </div>
+  
+  
+<div class="section">
+  <div class="eyebrow-label">Evidence</div>
+  <h2 class="section-title">What was actually observed <span class="badge badge-verified">Verified by measurement</span></h2>
+  <p class="section-intro">Quoted directly from the live page at time of audit.</p>
+  <div class="agreement">✓ Independently flagged by 1 of 7 analysts: Technical &amp; Accessibility</div>
+  <ul class="evidence-list"><li>Measured on the live homepage: 12 of 55 &lt;img&gt; elements have no alt attribute.</li></ul>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Business case</div>
+  <h2 class="section-title">Sized opportunity</h2>
+  <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
+    <div class="tile">
+      <div class="tval">$17,690 – $70,762</div>
+      <div class="tlabel">estimated annual opportunity</div>
+      <div class="tnote">2,160,000 annual visits x 2.10% conversion x 0.5-2.0% relative lift x $78 order value</div>
+    </div>
+    <div class="tile">
+      <div class="tval">0.5–2.0%</div>
+      <div class="tlabel">Assumed relative lift band</div>
+      <div class="tnote">Bounded by severity. This is an assumption used to frame a
+        range, not a prediction.</div>
+    </div>
+    <div class="tile">
+      <div class="tval">Low</div>
+      <div class="tlabel">Implementation effort</div>
+      <div class="tnote">0.5-2 days —
+        copy, colour, image or button-label changes</div>
+    </div>
+  </div>
+  <div class="caveat" style="margin-top:18px">
+    <strong>This is a hypothesis, not a forecast</strong>
+    Across 127,000 experiments, 12% produced a statistically significant improvement on the primary metric; a healthy programme win rate is 10-30%. Winning tests also tend to overstate
+    their true effect, so a gross projection can fall by roughly half once false
+    winners and magnitude error are corrected for. Treat the range above as the
+    prize if the change works, not as expected revenue.
+    
+  </div>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Prioritisation</div>
+  <h2 class="section-title">PXL score: 3 of 10</h2>
+  <p class="section-intro">PXL replaces subjective 1–10 scoring with binary questions,
+    so the ranking can be checked rather than trusted. The four evidence questions
+    score zero for anything found by inspection alone — that is the intended signal,
+    not a defect.</p>
+  <table class="dtable">
+    <thead><tr><th>Question</th><th class="num">Weight</th><th class="num">Answer</th><th class="num">Points</th></tr></thead>
+    <tbody><tr><td>Is the change above the fold?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Is the change noticeable in under 5 seconds?</td><td class="num">2</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Does it add or remove an element?</td><td class="num">1</td><td class="num yes">Yes</td><td class="num">1</td></tr><tr><td>Does it run on a high-traffic page?</td><td class="num">1</td><td class="num yes">Yes</td><td class="num">1</td></tr><tr><td>Discovered via user testing?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Discovered via qualitative feedback (survey, support)?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Supported by heatmaps or session recordings?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Found via digital analytics or real-user field data?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Verified by direct technical measurement? <span class="badge badge-effort">extension</span></td><td class="num">1</td><td class="num yes">Yes</td><td class="num">1</td></tr></tbody>
+  </table>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Implementation</div>
+  <h2 class="section-title">Developer specification</h2>
+  <p class="section-intro">Written so an engineer can build it without a follow-up
+    meeting, and a QA engineer can verify it.</p>
+  <dl class="spec">
+    <dt>Surface</dt><dd>SITE-WIDE ACCESSIBILITY</dd>
+    <dt>Problem</dt><dd>12 of 55 images carry no alt attribute, losing both assistive technology support and the image-search traffic the alt text earns.</dd>
+    <dt>Current state</dt><dd>notes: 12 images with no alt attribute</dd>
+    <dt>Proposed change</dt><dd>notes: Add descriptive alt text; use alt=&quot;&quot; only for decorative images.</dd>
+    <dt>Success metric</dt><dd>Organic sessions and impressions for the affected pages</dd>
+    <dt>Tracking</dt><dd class="mono">Instrument the affected control before launch;
+      confirm the event fires in both variants prior to opening traffic.</dd>
+    <dt>QA</dt><dd>Verify on Chrome, Safari and Firefox, at 375px and 1280px widths,
+      and confirm keyboard and screen-reader access to any changed control.</dd>
+    <dt>Effort</dt><dd>Low —
+      0.5-2 days</dd>
+    <dt>Test duration</dt><dd>not testable at current traffic to detect a 2.0% lift, and at least one full business cycle</dd>
+  </dl>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Experiment design</div>
+  <h2 class="section-title">How to prove it worked</h2>
+  <p class="section-intro">Two-proportion z-test at 95% significance and 80% power.
+    Halving the minimum detectable effect roughly quadruples the sample required, which is why the conservative figure is so much larger.</p>
+  <table class="dtable"><tbody>
+    <tr><td>Baseline conversion rate</td><td class="num">2.1%</td></tr>
+    <tr><td>Significance / power</td><td class="num">95% / 80%</td></tr>
+    <tr><td>Sample per variant to detect a 2.0% lift</td><td class="num">1,847,435</td></tr>
+    <tr><td>Sample per variant to detect a 0.5% lift</td><td class="num">29,344,186</td></tr><tr><td>Time to detect a 2.0% lift</td><td class="num">not feasible (616 days at current traffic)</td></tr><tr><td>Time to detect a 0.5% lift</td><td class="num">not feasible (9,782 days at current traffic)</td></tr></tbody></table>
+  <div class="caveat" style="margin-top:18px"><strong>Traffic is too thin to test this</strong>Reaching significance would take longer than eight weeks. Ship it on the strength of the evidence and measure the before/after, or bundle it with other changes into a single larger test.</div>
+  <p class="section-intro" style="margin-top:16px">Run until the calculated sample is reached AND at least one full business cycle has elapsed; 2-4 weeks is the practical norm.</p>
+</div>
+  <div class="pager"><a href="finding_9_controls_without_accessible_names.html">← Controls without accessible names</a><a href="roadmap.html">Roadmap →</a></div>
+</div>
+<div class="footer">
+  Prepared by <strong>The CRO Panel</strong> · <a href="mailto:panel@example.com">panel@example.com</a> · <a href="methodology.html">Method &amp; confidence</a>
+</div>
+</body>
+</html>
