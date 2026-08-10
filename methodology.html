@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Method — allbirds.com</title>
+<link rel="stylesheet" href="cro_system.css">
+</head>
+<body class="">
+<header>
+  <a class="logo-area" href="index.html" style="text-decoration:none">
+    <div class="logo-dot">A</div>
+    <div>
+      <div class="logo-text">allbirds.com</div>
+      <div class="logo-sub">CRO Recommendations — August 2026</div>
+    </div>
+  </a>
+  <nav class="nav"><a href="index.html">Overview</a><a href="roadmap.html">Roadmap</a><a href="appendix.html">All findings</a><a href="methodology.html" class="active">Method</a></nav>
+</header>
+
+<div class="wrap-narrow">
+  <div class="section">
+    <div class="eyebrow-label">Method</div>
+    <h2 class="section-title">How this audit was produced</h2>
+    <p class="section-intro">7 independent analysts reviewed
+      6 pages of allbirds.com crawled on August 2026.
+      Six examine the page heuristically: funnel path, message clarity, form friction,
+      trust and objections, pricing transparency, and navigational distraction. The
+      seventh takes direct technical measurements. Findings were merged, de-duplicated,
+      scored with PXL and sequenced into the roadmap.</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">What this audit can and cannot see</h2>
+    <table class="dtable">
+      <thead><tr><th>Evidence type</th><th>Available here</th></tr></thead>
+      <tbody>
+        <tr><td>Live page content, structure and copy</td><td class="yes">Yes — crawled directly</td></tr>
+        <tr><td>Core Web Vitals from real users</td><td class="no">No — PageSpeed API returned 403</td></tr>
+        <tr><td>Accessibility and technical defects</td><td class="yes">Yes — measured from the markup</td></tr>
+        <tr><td>Mobile rendering</td><td class="yes">Yes — audited separately</td></tr>
+        <tr><td>Analytics and funnel drop-off</td><td class="no">No — no account access</td></tr>
+        <tr><td>Session recordings and heatmaps</td><td class="no">No</td></tr>
+        <tr><td>User testing and customer interviews</td><td class="no">No</td></tr>
+        <tr><td>Survey and support-ticket themes</td><td class="no">No</td></tr>
+      </tbody>
+    </table>
+    <div class="caveat" style="margin-top:20px">
+      <strong>Read every finding as a hypothesis</strong>
+      Without analytics access, a heuristic finding identifies where value is likely
+      leaking, not proof that it is. That is exactly why PXL scores the four evidence
+      questions at zero for those findings. Anything marked
+      <em>Verified by measurement</em> is a different class of claim: it was measured
+      directly and is reproducible.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">The prioritisation score</h2>
+    <p class="section-intro">Binary questions, so the ranking can be audited rather
+      than trusted. Maximum 10 points.</p>
+    <table class="dtable">
+      <thead><tr><th>Question</th><th class="num">Weight</th><th>Origin</th></tr></thead>
+      <tbody><tr><td>Is the change above the fold?</td><td class="num">1</td><td>Standard PXL</td></tr><tr><td>Is the change noticeable in under 5 seconds?</td><td class="num">2</td><td>Standard PXL</td></tr><tr><td>Does it add or remove an element?</td><td class="num">1</td><td>Standard PXL</td></tr><tr><td>Does it run on a high-traffic page?</td><td class="num">1</td><td>Standard PXL</td></tr><tr><td>Discovered via user testing?</td><td class="num">1</td><td>Standard PXL</td></tr><tr><td>Discovered via qualitative feedback (survey, support)?</td><td class="num">1</td><td>Standard PXL</td></tr><tr><td>Supported by heatmaps or session recordings?</td><td class="num">1</td><td>Standard PXL</td></tr><tr><td>Found via digital analytics or real-user field data?</td><td class="num">1</td><td>Standard PXL</td></tr><tr><td>Verified by direct technical measurement?</td><td class="num">1</td><td>Local extension</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Benchmarks and sources</h2>
+    <p class="section-intro">Every external figure quoted in this report, with its
+      primary source. Generic "average conversion rate" figures are deliberately
+      excluded: they are contested across sources and not defensible for a
+      single site.</p>
+    <ul class="sources"><li><a href="https://baymard.com/lists/cart-abandonment-rate">Baymard Institute</a> — <strong>70.19%</strong><span class="claim">Average documented online shopping cart abandonment rate, a meta-analysis of roughly 50 separate studies.</span></li><li><a href="https://baymard.com/blog/checkout-flow-average-form-fields">Baymard Institute</a> — <strong>11.3 form fields</strong><span class="claim">Average checkout asks for 11.3 form fields across 5.1 steps; a well-designed checkout needs only 6-8.</span></li><li><a href="https://baymard.com/research/checkout-usability">Baymard Institute</a> — <strong>~35%</strong><span class="claim">65% of sites score mediocre or worse on checkout UX; correcting checkout usability could lift conversion by roughly 35%.</span></li><li><a href="https://www.deloitte.com/ie/en/services/consulting/research/milliseconds-make-millions.html">Deloitte / Google</a> — <strong>+8.4%</strong><span class="claim">A 0.1 second improvement in mobile site speed increased retail conversions 8.4% and average order value 9.2%.</span></li><li><a href="https://www.optimizely.com/field-notes/guides/127000-experiments">Optimizely</a> — <strong>~12%</strong><span class="claim">Across 127,000 experiments, 12% produced a statistically significant improvement on the primary metric; a healthy programme win rate is 10-30%.</span></li><li><a href="https://web.dev/articles/vitals">web.dev</a> — <strong>LCP 2.5s / INP 200ms / CLS 0.1</strong><span class="claim">A page passes Core Web Vitals only if all three metrics meet the &#x27;good&#x27; threshold at the 75th percentile of real users.</span></li><li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C</a> — <strong>WCAG 2.2 AA</strong><span class="claim">Four principles, 13 guidelines, testable success criteria at levels A, AA and AAA. Now ISO/IEC 40500.</span></li><li><a href="https://cxl.com/blog/better-way-prioritize-ab-tests/">CXL</a> — <strong>PXL</strong><span class="claim">Binary, evidence-weighted prioritisation designed to remove the subjectivity of 1-10 ICE/PIE scoring.</span></li><li><a href="https://cxl.com/blog/net-value-ab-testing/">CXL</a> — <strong>~50%</strong><span class="claim">A naive gross uplift projection fell to roughly half once false winners and magnitude error were corrected for.</span></li></ul>
+  </div>
+</div>
+<div class="footer">
+  Prepared by <strong>The CRO Panel</strong> · <a href="mailto:panel@example.com">panel@example.com</a> · <a href="methodology.html">Method &amp; confidence</a>
+</div>
+</body>
+</html>
