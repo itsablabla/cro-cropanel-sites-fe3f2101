@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Missing review count — allbirds.com</title>
+<link rel="stylesheet" href="cro_system.css">
+</head>
+<body class="">
+<header>
+  <a class="logo-area" href="index.html" style="text-decoration:none">
+    <div class="logo-dot">A</div>
+    <div>
+      <div class="logo-text">allbirds.com</div>
+      <div class="logo-sub">CRO Recommendations — August 2026</div>
+    </div>
+  </a>
+  <nav class="nav"><a href="index.html">Overview</a><a href="roadmap.html">Roadmap</a><a href="appendix.html">All findings</a><a href="methodology.html">Method</a></nav>
+</header>
+
+<div class="wrap">
+  <div class="finding-head">
+    <div class="badge-row">
+      <span class="rank-chip rank-high">8</span>
+      <span class="badge badge-high">High</span>
+      <span class="badge badge-effort">PRODUCT PAGE (ANYTIME ANKLE SOCK)</span>
+      
+    </div>
+    <h1>Missing review count</h1>
+    <p class="thesis">The product page shows a reviews section but lacks a visible review count or rating summary, reducing social proof and increasing purchase hesitation.</p>
+  </div>
+  
+  
+<div class="section">
+  <div class="eyebrow-label">Evidence</div>
+  <h2 class="section-title">What was actually observed </h2>
+  <p class="section-intro">Quoted directly from the live page at time of audit.</p>
+  <div class="agreement">✓ Independently flagged by 1 of 7 analysts: Trust &amp; Objection</div>
+  <ul class="evidence-list"><li>H2: &#x27;Reviews for Anytime Ankle Sock&#x27; but no review count or star rating visible in the provided body sample.</li></ul>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Business case</div>
+  <h2 class="section-title">Sized opportunity</h2>
+  <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
+    <div class="tile">
+      <div class="tval">$35,381 – $176,904</div>
+      <div class="tlabel">estimated annual opportunity</div>
+      <div class="tnote">2,160,000 annual visits x 2.10% conversion x 1.0-5.0% relative lift x $78 order value</div>
+    </div>
+    <div class="tile">
+      <div class="tval">1.0–5.0%</div>
+      <div class="tlabel">Assumed relative lift band</div>
+      <div class="tnote">Bounded by severity. This is an assumption used to frame a
+        range, not a prediction.</div>
+    </div>
+    <div class="tile">
+      <div class="tval">Medium</div>
+      <div class="tlabel">Implementation effort</div>
+      <div class="tnote">2-5 days —
+        layout shifts, form field changes, new modules</div>
+    </div>
+  </div>
+  <div class="caveat" style="margin-top:18px">
+    <strong>This is a hypothesis, not a forecast</strong>
+    Across 127,000 experiments, 12% produced a statistically significant improvement on the primary metric; a healthy programme win rate is 10-30%. Winning tests also tend to overstate
+    their true effect, so a gross projection can fall by roughly half once false
+    winners and magnitude error are corrected for. Treat the range above as the
+    prize if the change works, not as expected revenue.
+    
+  </div>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Prioritisation</div>
+  <h2 class="section-title">PXL score: 4 of 10</h2>
+  <p class="section-intro">PXL replaces subjective 1–10 scoring with binary questions,
+    so the ranking can be checked rather than trusted. The four evidence questions
+    score zero for anything found by inspection alone — that is the intended signal,
+    not a defect.</p>
+  <table class="dtable">
+    <thead><tr><th>Question</th><th class="num">Weight</th><th class="num">Answer</th><th class="num">Points</th></tr></thead>
+    <tbody><tr><td>Is the change above the fold?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Is the change noticeable in under 5 seconds?</td><td class="num">2</td><td class="num yes">Yes</td><td class="num">2</td></tr><tr><td>Does it add or remove an element?</td><td class="num">1</td><td class="num yes">Yes</td><td class="num">1</td></tr><tr><td>Does it run on a high-traffic page?</td><td class="num">1</td><td class="num yes">Yes</td><td class="num">1</td></tr><tr><td>Discovered via user testing?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Discovered via qualitative feedback (survey, support)?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Supported by heatmaps or session recordings?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Found via digital analytics or real-user field data?</td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Verified by direct technical measurement? <span class="badge badge-effort">extension</span></td><td class="num">1</td><td class="num no">No</td><td class="num">0</td></tr></tbody>
+  </table>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Implementation</div>
+  <h2 class="section-title">Developer specification</h2>
+  <p class="section-intro">Written so an engineer can build it without a follow-up
+    meeting, and a QA engineer can verify it.</p>
+  <dl class="spec">
+    <dt>Surface</dt><dd>PRODUCT PAGE (ANYTIME ANKLE SOCK)</dd>
+    <dt>Problem</dt><dd>The product page shows a reviews section but lacks a visible review count or rating summary, reducing social proof and increasing purchase hesitation.</dd>
+    <dt>Current state</dt><dd>h1: Anytime Ankle Sock; cta: Learn More; notes: Reviews section exists but no aggregate rating or count is displayed near the product title or price.</dd>
+    <dt>Proposed change</dt><dd>h1: Anytime Ankle Sock; cta: Add to Cart; notes: Add a star rating and review count (e.g., &#x27;4.8 ★ (2,345 reviews)&#x27;) directly under the product title or price to provide immediate social proof.</dd>
+    <dt>Success metric</dt><dd>Conversion rate on the affected step</dd>
+    <dt>Tracking</dt><dd class="mono">Instrument the affected control before launch;
+      confirm the event fires in both variants prior to opening traffic.</dd>
+    <dt>QA</dt><dd>Verify on Chrome, Safari and Firefox, at 375px and 1280px widths,
+      and confirm keyboard and screen-reader access to any changed control.</dd>
+    <dt>Effort</dt><dd>Medium —
+      2-5 days</dd>
+    <dt>Test duration</dt><dd>not testable at current traffic to detect a 5.0% lift, and at least one full business cycle</dd>
+  </dl>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Experiment design</div>
+  <h2 class="section-title">How to prove it worked</h2>
+  <p class="section-intro">Two-proportion z-test at 95% significance and 80% power.
+    Halving the minimum detectable effect roughly quadruples the sample required, which is why the conservative figure is so much larger.</p>
+  <table class="dtable"><tbody>
+    <tr><td>Baseline conversion rate</td><td class="num">2.1%</td></tr>
+    <tr><td>Significance / power</td><td class="num">95% / 80%</td></tr>
+    <tr><td>Sample per variant to detect a 5.0% lift</td><td class="num">299,882</td></tr>
+    <tr><td>Sample per variant to detect a 1.0% lift</td><td class="num">7,353,946</td></tr><tr><td>Time to detect a 5.0% lift</td><td class="num">not feasible (100 days at current traffic)</td></tr><tr><td>Time to detect a 1.0% lift</td><td class="num">not feasible (2,452 days at current traffic)</td></tr></tbody></table>
+  <div class="caveat" style="margin-top:18px"><strong>Traffic is too thin to test this</strong>Reaching significance would take longer than eight weeks. Ship it on the strength of the evidence and measure the before/after, or bundle it with other changes into a single larger test.</div>
+  <p class="section-intro" style="margin-top:16px">Run until the calculated sample is reached AND at least one full business cycle has elapsed; 2-4 weeks is the practical norm.</p>
+</div>
+  <div class="pager"><a href="finding_7_missing_add_to_cart_cta.html">← Missing add-to-cart CTA</a><a href="finding_9_controls_without_accessible_names.html">Controls without accessible names →</a></div>
+</div>
+<div class="footer">
+  Prepared by <strong>The CRO Panel</strong> · <a href="mailto:panel@example.com">panel@example.com</a> · <a href="methodology.html">Method &amp; confidence</a>
+</div>
+</body>
+</html>
